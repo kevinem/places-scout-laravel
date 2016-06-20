@@ -3,6 +3,49 @@
 The Places Scout API is a highly scalable SAAS platform based on the popular Service Stack open source solution for 
 high performance REST web services, and can deliver a wide range of valuable SEO data for enterprise level clients.
 
+## Install
+
+You can pull in the package via composer:
+``` bash
+$ composer require kevinem/places-scout-php
+```
+
+## Configuration
+
+After installing the package, register the `KevinEm\PlacesScoutLaravel\PlacesScoutLaravelServiceProvider`
+in your `config/app.php` configuration file:
+
+```php
+'providers' => [
+    // Other service providers...
+
+    KevinEm\PlacesScoutLaravel\PlacesScoutLaravelServiceProvider::class,
+],
+```
+
+Also, you can add the `PlacesScoutLaravel` facade to the `aliases` array in your `config/app.php` configuration file:
+
+```php
+'aliases' => [
+    // Other facades...
+    
+    'PlacesScoutLaravel' => KevinEm\PlacesScoutLaravel\Facades\PlacesScoutLaravel::class,
+],
+```
+
+To publish the config using the following command:
+
+```php
+$ php artisan vendor:publish
+```
+
+Add your credentials to your `.env` file:
+
+```
+PLACES_SCOUT_USERNAME=
+PLACES_SCOUT_PASSWORD=
+```
+
 ## Documentation
 
 [documentation](https://apihost1.placesscout.com/documentation/index.html)
