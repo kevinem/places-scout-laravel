@@ -8,7 +8,6 @@
       "email": "kevinem@thinkdevise.com"
     }
   ],
-  "minimum-stability": "stable",
   "require": {
     "kevinem/places-scout-php": "^0.1.0"
   },
