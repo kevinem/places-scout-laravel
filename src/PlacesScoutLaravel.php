@@ -5,16 +5,6 @@ namespace KevinEm\PlacesScoutLaravel;
 
 
 use KevinEm\PlacesScoutPHP\PlacesScout;
-use KevinEm\PlacesScoutPHP\PlacesScoutBilling;
-use KevinEm\PlacesScoutPHP\PlacesScoutCitationReports;
-use KevinEm\PlacesScoutPHP\PlacesScoutClientLocations;
-use KevinEm\PlacesScoutPHP\PlacesScoutClients;
-use KevinEm\PlacesScoutPHP\PlacesScoutLeadGenReports;
-use KevinEm\PlacesScoutPHP\PlacesScoutListingReports;
-use KevinEm\PlacesScoutPHP\PlacesScoutNotifications;
-use KevinEm\PlacesScoutPHP\PlacesScoutRankingReports;
-use KevinEm\PlacesScoutPHP\PlacesScoutReputationReports;
-use KevinEm\PlacesScoutPHP\PlacesScoutStatus;
 
 class PlacesScoutLaravel
 {
@@ -33,82 +23,82 @@ class PlacesScoutLaravel
     }
 
     /**
-     * @return PlacesScoutBilling
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutBilling
      */
     public function billing()
     {
-        return new PlacesScoutBilling($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutBilling($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutCitationReports
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutCitationReports
      */
     public function citationReports()
     {
-        return new PlacesScoutCitationReports($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutCitationReports($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutClientLocations
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutClientLocations
      */
     public function clientLocations()
     {
-        return new PlacesScoutClientLocations($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutClientLocations($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutClients
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutClients
      */
     public function clients()
     {
-        return new PlacesScoutClients($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutClients($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutLeadGenReports
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutLeadGenReports
      */
     public function leadGenReports()
     {
-        return new PlacesScoutLeadGenReports($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutLeadGenReports($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutListingReports
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutListingReports
      */
     public function listingReports()
     {
-        return new PlacesScoutListingReports($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutListingReports($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutNotifications
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutNotifications
      */
     public function notifications()
     {
-        return new PlacesScoutNotifications($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutNotifications($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutRankingReports
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutRankingReports
      */
     public function rankingReports()
     {
-        return new PlacesScoutRankingReports($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutRankingReports($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutReputationReports
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutReputationReports
      */
     public function reputationReports()
     {
-        return new PlacesScoutReputationReports($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutReputationReports($this->placesScout);
     }
 
     /**
-     * @return PlacesScoutStatus
+     * @return \KevinEm\PlacesScoutPHP\PlacesScoutStatus
      */
     public function status()
     {
-        return new PlacesScoutStatus($this->placesScout);
+        return new \KevinEm\PlacesScoutPHP\PlacesScoutStatus($this->placesScout);
     }
 }
