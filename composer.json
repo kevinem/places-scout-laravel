@@ -12,8 +12,8 @@
     "kevinem/places-scout-php": "^0.1.0"
   },
   "autoload": {
-    "psr-0": {
-      "PlacesScoutLaravel": "src/"
+    "psr-4": {
+      "KevinEm\\PlacesScoutLaravel\\": "src/"
     }
   }
 }
