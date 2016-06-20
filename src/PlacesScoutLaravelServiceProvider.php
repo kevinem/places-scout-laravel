@@ -30,7 +30,10 @@ class PlacesScoutLaravelServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/config.php', 'places-scout');
 
         $this->app['places-scout-laravel'] = $this->app->share(function ($app) {
-            return new PlacesScout($app['config']['places-scout.username'], $app['config']['places-scout.password']);
+            return new PlacesScout([
+                'username' => $app['config']['places-scout.username'],
+                'password' => $app['config']['places-scout.password']
+            ]);
         });
     }
 
