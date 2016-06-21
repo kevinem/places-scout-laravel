@@ -50,6 +50,16 @@ PLACES_SCOUT_PASSWORD=
 
 [documentation](https://apihost1.placesscout.com/documentation/index.html)
 
+## Example Usage
+
+```php
+$clients = PlacesScoutLaravel::clients()->lists();
+
+$rankingReports = PlacesScoutLaravel::rankingReports()->lists();
+
+$run = PlacesScoutLaravel::rankingReports()->getRun('7Qs0xGHWuE', '53mM466');
+```
+
 ## License 
 
 The MIT License (MIT)
