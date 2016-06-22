@@ -7,7 +7,7 @@ high performance REST web services, and can deliver a wide range of valuable SEO
 
 You can pull in the package via composer:
 ``` bash
-$ composer require kevinem/places-scout-php
+$ composer require kevinem/places-scout-laravel
 ```
 
 ## Configuration
