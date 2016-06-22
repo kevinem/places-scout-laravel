@@ -1,5 +1,8 @@
 # Places Scout Laravel 5 
 
+[![Latest Stable Version](https://poser.pugx.org/kevinem/places-scout-laravel/v/stable?format=flat-square)](https://packagist.org/packages/kevinem/places-scout-laravel)
+[![License](https://poser.pugx.org/kevinem/places-scout-laravel/license?format=flat-square)](https://packagist.org/packages/kevinem/places-scout-laravel)
+
 The Places Scout API is a highly scalable SAAS platform based on the popular Service Stack open source solution for 
 high performance REST web services, and can deliver a wide range of valuable SEO data for enterprise level clients.
 
