@@ -36,7 +36,7 @@ Also, you can add the `PlacesScoutLaravel` facade to the `aliases` array in your
 ],
 ```
 
-To publish the config using the following command:
+Publish the config using the following command:
 
 ```php
 $ php artisan vendor:publish
