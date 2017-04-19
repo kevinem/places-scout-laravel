@@ -61,6 +61,24 @@ $clients = PlacesScoutLaravel::clients()->lists();
 $rankingReports = PlacesScoutLaravel::rankingReports()->lists();
 
 $run = PlacesScoutLaravel::rankingReports()->getRun('7Qs0xGHWuE', '53mM466');
+
+PlacesScoutLaravel::reputationReports()->create([
+    'query' => [
+        'Name' => 'testing'
+    ],
+    'json' => [
+        'BusinessInfo' => [
+            'BusinessName' => 'Test Business',
+            'FullAddress' => '123 Test St',
+            'StreetAddress' => '123 Test St',
+            'City' => 'Pasadena',
+            'State' => 'CA',
+            'ZipCode' => '91770',
+            'PhoneNumber' => '1231231234',
+            'Country' => 'UnitedStates'
+        ]
+    ]
+]);
 ```
 
 ## License 
