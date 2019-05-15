@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "kevinem/places-scout-php": "^1.0"
+    "kevinem/places-scout-php": "^1.1"
   },
   "autoload": {
     "psr-4": {
